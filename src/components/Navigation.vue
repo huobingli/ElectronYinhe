@@ -1,11 +1,7 @@
 <template>
 <el-row class="tac">
   <el-col :span="24">
-    <el-menu default-active="1"
-      class="el-menu-vertical-demo"
-      @open="handleOpen"
-      @close="handleClose"
-      @select="handleSelect">
+    <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" @select="handleSelect">
       <el-submenu v-for="item of menus" :key="item.index" :index="item.index">
         <template slot="title">
           <span class="el-top-title">{{item.title}}</span>
@@ -67,21 +63,19 @@
 </script>
 
 <style>
-.el-top-title {
-  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-}
-
 .el-submenu__title{
   padding-left: 0px !important;
   padding-right: 0px !important;
+  overflow: hidden;
 }
-/* .el-top-title {
-  padding-left:10px !important;
-} */
+.el-top-title {
+  padding-left:20px !important;
+  padding-right:0px;
+}
 
 .navi-sub-item{
-  /* font-size:10px; */
-  padding-left:10px !important;
-  padding-right: 10px;
+  padding-left:30px !important;
+  padding-right: 0px;
 }
+
 </style>

@@ -1,14 +1,13 @@
 <template>
-  <div class="gaolin">
-    <!-- <h1>Welcome to Vue-cli3 Clean Template!</h1> -->
+  <div class="main">
     <demo/>
   </div>
 </template>
 
 <script>
-import demo from '@/components/gaolin'
+import demo from '@/components/Status'
 export default {
-  name: 'gaolin',
+  name: 'Status',
   components: {demo},
   computed: {},
   mounted() {},
@@ -17,7 +16,3 @@ export default {
 </script>
 <style>
 </style>
-
-
-
-

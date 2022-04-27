@@ -1,15 +1,6 @@
 <template>
   <div id="app">
     <div id="nav" >
-      <router-link to="/">Home</router-link>&nbsp;&nbsp;
-      <router-link to="dapan">大盘</router-link>&nbsp;&nbsp;
-      <router-link to="gaolin">高瓴资本</router-link>&nbsp;&nbsp;
-      <router-link to="gaoyi">高毅资本</router-link>&nbsp;&nbsp;
-      <router-link to="SXX">四象限</router-link>&nbsp;&nbsp;
-      <router-link to="TableUI">表格</router-link>&nbsp;&nbsp;
-      <router-link to="Navigation">导航</router-link>&nbsp;&nbsp;
-      <router-link to="Search">查找</router-link>&nbsp;&nbsp;
-      <router-link to="Main">银河</router-link>&nbsp;&nbsp;
     </div>
     <router-view />
   </div>
@@ -30,6 +21,8 @@ input {
   font-family: 'Microsoft YaHei', 'Avenir', Helvetica, Arial, sans-serif;
 }
 #app {
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 /* 红涨绿跌 */
@@ -70,60 +63,4 @@ body::-webkit-scrollbar-thumb,
 :hover::-webkit-scrollbar-thumb {
   background: #404040;
 }
-
-/* 两边有箭头的滚动条样式 */
-/* ::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-track-piece {
-  background-color: #26282e;
-  cursor: pointer;
-}
-::-webkit-scrollbar-button {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background: #35373e;
-  border-radius: 4px;
-  border: 2px solid #26282e;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #4f4f4f;
-}
-::-webkit-scrollbar-corner {
-  background: #26282e;
-}
-::-webkit-scrollbar-button:vertical:end,
-::-webkit-scrollbar-button:vertical:start,
-::-webkit-scrollbar-button:horizontal:start,
-::-webkit-scrollbar-button:horizontal:end {
-  content: '';
-  position: relative;
-}
-::-webkit-scrollbar-button:vertical:start,
-::-webkit-scrollbar-button:vertical:end {
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  width: 0;
-}
-::-webkit-scrollbar-button:horizontal:start,
-::-webkit-scrollbar-button:horizontal:end {
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-}
-::-webkit-scrollbar-button:vertical:end {
-  border-top: 5px solid #35373e;
-}
-::-webkit-scrollbar-button:vertical:start {
-  border-bottom: 5px solid #35373e;
-}
-::-webkit-scrollbar-button:horizontal:start {
-  border-right: 5px solid #35373e;
-}
-::-webkit-scrollbar-button:horizontal:end {
-  border-left: 5px solid #35373e;
-} */
 </style>

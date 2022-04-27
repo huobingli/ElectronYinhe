@@ -1,14 +1,13 @@
 <template>
   <div class="main">
-    <!-- <h1>Welcome to Vue-cli3 Clean Template!</h1> -->
     <demo/>
   </div>
 </template>
 
 <script>
-import demo from '@/components/sxx'
+import demo from '@/components/Header'
 export default {
-  name: 'sxx',
+  name: 'Header',
   components: {demo},
   computed: {},
   mounted() {},

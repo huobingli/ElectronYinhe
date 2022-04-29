@@ -25,11 +25,11 @@
     data() {
       return {
         transdata:"",
-        menus:""
+        menus:[]
       }
     },
     mounted() {
-      window.open("mdapi://yinhe_navigate?call_info=hidetext")
+      //window.open("mdapi://yinhe_navigate?call_info=hidetext")
 
       var data = {
         "js_id": uuidv4(),
@@ -55,7 +55,7 @@
         console.log(key, keyPath)
       },
       handleSelect(key, keyPath) {
-        window.open("mdapi://yinhe_navigate?call_info=hidetext")
+        //window.open("mdapi://yinhe_navigate?call_info=hidetext")
 
         var data = {
           "js_id": uuidv4(),

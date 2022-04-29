@@ -14,8 +14,4 @@ export const initClient = (app) => {
     window.UpdateTable = (data) => {
         app.$eventBus.$emit("UpdateTable", data);
     }
-
-    window.Test = (data) => {
-        app.$eventBus.$emit("testHandleUserList", data);
-    }
 }

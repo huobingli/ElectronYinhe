@@ -1,7 +1,6 @@
 <template>
   <div class="el-container-custom">
-    <!-- <Tool> </Tool> -->
-    <!-- <Search></Search> -->
+    <Search></Search>
     <el-container >
       <el-aside class="Navi" min-width="180px" width="180px" >
         <Navigation></Navigation>
@@ -52,6 +51,7 @@ export default {
 <style>
 #hidetext{
   visibility:hidden;
+  height:0px;
 }
 
 .Navi {
@@ -66,12 +66,16 @@ export default {
 
 .el-container,
 .el-aside,
-.el-main ,
+/* .el-main , */
 .el-table__body,
-/* .el-table__body-wrapper, */
+.el-table__body-wrapper,
 .el-container-custom{
   height: 100% !important;
 }
 
+.el-main{
+  height: calc(100%)-30px !important;
+  padding-bottom: 60px !important;
+}
 
 </style>

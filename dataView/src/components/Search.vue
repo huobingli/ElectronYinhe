@@ -43,7 +43,7 @@ export default {
 
 <style>
 .search_bar {
-  height: 40px;
+  height: 30px;
 }
 
 .search-text {

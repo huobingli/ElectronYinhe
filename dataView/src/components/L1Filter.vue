@@ -53,8 +53,8 @@
     </el-row>
     <el-row class="L1-filter-file">
       <el-col :span="2" class="L1-file-text"> 行情落地文件 </el-col>
-      <el-col :span="6" class="L1-file-input-el">
-        <el-input class="L1-file-input" v-model="input" placeholder="请输入内容"></el-input>
+      <el-col :span="8" class="L1-file-input-el">
+        <el-input class="L1-file-input" v-model="input" placeholder="请输入内容" ></el-input>
       </el-col>
       <el-col :span="2" class="L1-set-file-button">
         <el-button size="small" @click="SearchCode">设置</el-button>
@@ -99,19 +99,36 @@ export default {
 }
 
 .L1-filter-file {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .L1-file-input{
-  width: 300px !important;
+  width: 800px ;
+}
+
+div > .el-input__inner {
+  height: 30px;
+  margin: 0 auto;
 }
 
 .el-dropdown-link {
   cursor: pointer;
   color: #409eff;
 }
+
 .el-icon-arrow-down {
   font-size: 12px;
 }
+
+.L1-file-text,
+.L1-file-input-el,
+.L1-set-file-button {
+  line-height: 40px;
+}
+
+.L1-file-input-el {
+  margin-right:20px
+}
+
 </style>

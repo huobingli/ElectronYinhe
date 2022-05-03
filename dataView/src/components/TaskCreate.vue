@@ -1,8 +1,8 @@
 <template>
   <el-row class="task-bar">
     <el-col class="task-create-button">
-        <el-button @click="CreateTask">新建任务</el-button>
-      </el-col>
+        <el-button type="small" @click="CreateTask">新建任务</el-button>
+    </el-col>
   </el-row>
 </template>
 <script>
@@ -38,7 +38,8 @@ export default {
 
 <style>
 .task-bar {
-  padding: 20px;
+  /* padding: 10px; */
+  line-height: 40px;
 }
 
 </style>

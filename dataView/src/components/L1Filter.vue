@@ -1,6 +1,6 @@
 <template>
   <el-row class="L1-Filter-bar">
-    <el-row>
+    <el-row class="L1-filter-bar-top">
       <el-col :span="2" class="L1-search-text"> 市场类型 </el-col>
       <el-col :span="3" class="search-input">
         <el-dropdown>
@@ -45,10 +45,10 @@
         </el-dropdown>
       </el-col>
       <el-col :span="2" class="L1-order-button">
-        <el-button @click="SearchCode">订阅</el-button>
+        <el-button size="small" @click="SearchCode">订阅</el-button>
       </el-col>
       <el-col :span="2" class="L1-cancel-button">
-        <el-button @click="SearchCode">退订</el-button>
+        <el-button size="small" @click="SearchCode">退订</el-button>
       </el-col>
     </el-row>
     <el-row class="L1-filter-file">
@@ -57,7 +57,7 @@
         <el-input class="L1-file-input" v-model="input" placeholder="请输入内容" ></el-input>
       </el-col>
       <el-col :span="2" class="L1-set-file-button">
-        <el-button @click="SearchCode">设置</el-button>
+        <el-button size="small" @click="SearchCode">设置</el-button>
       </el-col>
     </el-row>
   </el-row>
@@ -95,13 +95,13 @@ export default {
 
 <style>
 .L1-Filter-bar {
-  padding: 20px;
+  padding: 10px;
 }
 
-.L1-filter-file {
+/* .L1-filter-file {
   padding-top: 10px;
   padding-bottom: 10px;
-}
+} */
 
 .L1-file-input{
   width: 800px ;
@@ -121,6 +121,7 @@ div > .el-input__inner {
   font-size: 12px;
 }
 
+.L1-filter-bar-top,
 .L1-file-text,
 .L1-file-input-el,
 .L1-set-file-button {

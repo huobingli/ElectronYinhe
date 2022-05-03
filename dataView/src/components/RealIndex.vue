@@ -1,8 +1,8 @@
 <template>
-  <div class="el-container-custom">
+  <div class="real-el-container-custom">
     <RealHeader></RealHeader>
     <el-container >
-      <el-aside class="Navi" min-width="180px" width="180px" >
+      <el-aside class="real-navi" min-width="180px" width="180px" >
         <RealNavi></RealNavi>
       </el-aside>
       <el-main>
@@ -10,7 +10,7 @@
       </el-main>
       
     </el-container>
-    <div id="hidetext">{{transdata}}</div>
+    <div id="real-hidetext">{{transdata}}</div>
   </div>
 </template>
 <script>
@@ -30,29 +30,21 @@ export default {
       transdata:"",
     };
   },
-  mounted() {
-    
-    // this.transdata=JSON.stringify(data)
-  },
+  mounted() {},
   created() {},
   methods: {},
 };
 </script>
 
 <style>
-#hidetext{
+#real-hidetext{
   visibility:hidden;
   height:0px;
 }
 
-.Navi {
+.real-navi {
   width: 100%;
   overflow-x: hidden !important;
-}
-
-.el-container-custom {
-  /* height: 600px !important;
-  min-height: 600px !important; */
 }
 
 .el-container,
@@ -60,7 +52,7 @@ export default {
 /* .el-main , */
 .el-table__body,
 .el-table__body-wrapper,
-.el-container-custom{
+.real-el-container-custom{
   height: 100% !important;
 }
 

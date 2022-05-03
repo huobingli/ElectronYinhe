@@ -6,6 +6,7 @@ import Search from './views/Search.vue';
 import Main from './views/Main.vue';
 import L1Real from './views/L1Real.vue';
 import RealIndex from './views/RealIndex.vue';
+import TaskIndex from './views/TaskIndex.vue';
 
 // 测试工具
 // import Tool from './views/Tool.vue';
@@ -46,6 +47,11 @@ export default new Router({
       path: '/RealIndex',
       name: 'RealIndex',
       component: RealIndex
+    },
+    {
+      path: '/TaskIndex',
+      name: 'TaskIndex',
+      component: TaskIndex
     }
   ]
 });

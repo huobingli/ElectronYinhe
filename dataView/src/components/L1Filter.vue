@@ -45,10 +45,10 @@
         </el-dropdown>
       </el-col>
       <el-col :span="2" class="L1-order-button">
-        <el-button size="small" @click="SearchCode">订阅</el-button>
+        <el-button @click="SearchCode">订阅</el-button>
       </el-col>
       <el-col :span="2" class="L1-cancel-button">
-        <el-button size="small" @click="SearchCode">退订</el-button>
+        <el-button @click="SearchCode">退订</el-button>
       </el-col>
     </el-row>
     <el-row class="L1-filter-file">
@@ -57,7 +57,7 @@
         <el-input class="L1-file-input" v-model="input" placeholder="请输入内容" ></el-input>
       </el-col>
       <el-col :span="2" class="L1-set-file-button">
-        <el-button size="small" @click="SearchCode">设置</el-button>
+        <el-button @click="SearchCode">设置</el-button>
       </el-col>
     </el-row>
   </el-row>

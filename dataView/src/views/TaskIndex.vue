@@ -6,9 +6,9 @@
 </template>
 
 <script>
-import demo from '@/components/RealTable'
+import demo from '@/components/TaskIndex'
 export default {
-  name: 'RealTable',
+  name: 'TaskIndex',
   components: {demo},
   computed: {},
   mounted() {},
@@ -16,4 +16,7 @@ export default {
 };
 </script>
 <style>
+.main{
+  height:100% !important;
+}
 </style>

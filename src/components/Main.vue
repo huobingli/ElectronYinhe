@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-header>
+    <el-header class="main-el-header">
       <Header> </Header>
     </el-header>
     <el-main class="el-main-custom">
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style>
-.el-header{
+.main-el-header{
   position: relative;
   width: 100%;
   height: 30px !important;

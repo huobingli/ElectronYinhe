@@ -4,6 +4,7 @@ import TableUI from './views/TableUI.vue';
 import Navigation from './views/Navigation.vue';
 import Search from './views/Search.vue';
 import Main from './views/Main.vue';
+import L1Real from './views/L1Real.vue';
 
 // 测试工具
 // import Tool from './views/Tool.vue';
@@ -34,6 +35,11 @@ export default new Router({
       path: '/Main',
       name: 'Main',
       component: Main
+    },
+    {
+      path: '/L1Real',
+      name: 'L1Real',
+      component: L1Real
     }
   ]
 });

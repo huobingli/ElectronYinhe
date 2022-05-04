@@ -23,8 +23,8 @@
 export default {
   data() {
     return {
-      tableHeader: [{"name":"序号","prop":"code","width":"200"},{"name":"市场类型","prop":"name","width":"140"},{"name":"数据类型","prop":"pre","width":"140"},{"name":"证券代码","prop":"open","width":"140"},{"name":"订阅状态","prop":"high","width":"140"},{"name":"落地文件","prop":"low","width":"140"}],
-      tableData: [],
+      tableHeader: [{"name":"序号","prop":"id","width":"200"},{"name":"市场类型","prop":"market_type","width":"140"},{"name":"数据类型","prop":"data_type","width":"140"},{"name":"证券代码","prop":"code","width":"140"},{"name":"订阅状态","prop":"order_type","width":"140"},{"name":"落地文件","prop":"file","width":"350"}],
+      tableData: [{"id":"1","market_type":"上海","data_type":"日线","code":"600000","order_type":"已经订阅","file":"测试文件"},{"id":"2","market_type":"上海","data_type":"分钟K线","code":"600000","order_type":"订阅","file":"测试文件"},{"id":"3","market_type":"深圳","data_type":"现货数据","code":"300750","order_type":"已经订阅","file":"测试文件"},{"id":"4","market_type":"上海","data_type":"日线","code":"600000","order_type":"已经过期","file":"测试文件"}],
       tableAllData: [],
       pageSize:100,
       currentPage:1      

@@ -35,6 +35,6 @@ export default {
 
 <style>
 .task-el-header {
-  height:60px !important;
+  height:40px !important;
 }
 </style>

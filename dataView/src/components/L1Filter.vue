@@ -98,18 +98,8 @@ export default {
   padding: 10px;
 }
 
-/* .L1-filter-file {
-  padding-top: 10px;
-  padding-bottom: 10px;
-} */
-
 .L1-file-input{
   width: 800px ;
-}
-
-div > .el-input__inner {
-  height: 30px;
-  margin: 0 auto;
 }
 
 .el-dropdown-link {

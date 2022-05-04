@@ -20,7 +20,14 @@
                  <el-input v-model="form.downloadtime" autocomplete="off"></el-input>
             </el-form-item>
             <el-form-item label="数据时间" :label-width="formLabelWidth">
-                <el-input v-model="form.datatime" autocomplete="off"></el-input>
+                <!-- <el-input v-model="form.datatime" autocomplete="off"></el-input> -->
+                <el-date-picker
+                    v-model="form.datatime"
+                    type="daterange"
+                    range-separator="至"
+                    start-placeholder="开始日期"
+                    end-placeholder="结束日期">
+                    </el-date-picker>
             </el-form-item>
             <el-form-item label="下载方式" :label-width="formLabelWidth">
                 <el-radio v-model="form.downloadtype" label="1">单次下载</el-radio>
@@ -100,7 +107,6 @@ export default {
 
 <style>
 .task-bar {
-  /* padding: 10px; */
   line-height: 40px;
 }
 </style>

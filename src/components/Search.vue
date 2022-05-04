@@ -56,10 +56,6 @@ export default {
   margin: 0 auto;
 }
 
-div > .el-input__inner {
-  height: 30px;
-  margin: 0 auto;
-}
 .search-button {
   margin: 0 auto;
 }

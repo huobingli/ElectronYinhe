@@ -22,6 +22,7 @@
             <el-form-item label="数据时间" :label-width="formLabelWidth">
                 <!-- <el-input v-model="form.datatime" autocomplete="off"></el-input> -->
                 <el-date-picker
+                    class="task-create-time-picker"
                     v-model="form.datatime"
                     type="daterange"
                     range-separator="至"
@@ -57,7 +58,7 @@
         </el-form>
         <div slot="footer" class="dialog-footer">
             <el-button @click="dialogFormVisible = false">取 消</el-button>
-            <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+            <el-button type="primary" @click="CreateTaskOK">确 定</el-button>
         </div>
     </el-dialog>
   </div>
@@ -101,6 +102,10 @@ export default {
       console.log("button is clicked, input", this.input);
       this.$eventBus.$emit("CreateTask", this.input);
     },
+    CreateTaskOK() {
+      this.dialogFormVisible = false
+      console.log(this.form)
+    }
   },
 };
 </script>
@@ -108,5 +113,9 @@ export default {
 <style>
 .task-bar {
   line-height: 40px;
+}
+
+.task-create-time-picker {
+  width: 400px !important;
 }
 </style>

@@ -28,3 +28,10 @@ npm ERR!
 没有显示包，并且自动跳转到了 https://cdn.npmmirror.com/binaries/electronv18.1.0/electron-v18.1.0-win32-x64.zip
 
 但是正常url是 https://registry.npmmirror.com/binary.html?path=electron/v18.1.0/
+
+
+### packge
+https://www.jianshu.com/p/ced115ccab75
+```
+electron-packager . --overwrite --electron-zip-dir=./electron-zip
+```
